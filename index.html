@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>  
+    
+    <div id="app">
+
+        <div class="row">
+         <img v-bind:src="images[idImagesCurrent]"/>
+          </div>
+          <button  v-on:click="imagesListPrev">prev</button>
+          <button  v-on:click="imagesListNext">next</button>  
+          <input v-model="newImg" placeholder="вставьте ссылку на изображение">
+          <button  v-on:click="imagesListAdd">add</button>
+     </div>
+
+
+     <script src="https://unpkg.com/vue"></script>   
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="user.json"  type="text/javascript"></script>
+<script src="next.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+</body>
+</html>
